@@ -14,14 +14,14 @@ public class BamsongiController : MonoBehaviour
         GetComponent<Rigidbody>().isKinematic = true;
         GetComponent<ParticleSystem>().Play();
     }
-    // Start is called before the first frame update
+
+
     void Start()
     {
-        Application.targetFrameRate = 300;
-        Shoot(new Vector3 (0, 200, 2000));
+        Application.targetFrameRate = 60;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
